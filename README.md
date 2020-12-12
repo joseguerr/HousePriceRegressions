@@ -1,5 +1,21 @@
 # HousePriceRegressions
 
+The goal of the present project is to predict the house sale's price using the Ames housing dataset (https://www.kaggle.com/c/house-prices-advanced-regression-techniques). I would also advise you to take a look at these two kernels which greatly helped me troughout the project:
+
+https://www.kaggle.com/pmarcelino/comprehensive-data-exploration-with-python by Pedro Marcelino
+https://www.kaggle.com/johnwill225/extensive-exploratory-data-analysis/notebook by John Willson
+Questions are always welcome, leave an upvote if you enjoyed it!
+
+#### Table of Contents
+1. Dataset Overview
+2. Exploratory Data Analysis
+3. Handling Missing Data
+4. Feature Transformation
+5. Model Training
+6. Prediction
+7. Conclusions
+8. Submission
+
 Firstly, we had an overview and perform and exploratory data analysis on the dataset giving us essential insights. Information such as variables being skewed, missing values, relation between dependent and independent variables and outliers was evaluated. This activity was rather extensive but it gave us some necessary domain knowledge and a better feeling regarding the type of data we were working with - numerical, ordinal, categorical.
 
 We then take a look at the correlation matrix and perform label encoding for the categorical variables. The top 5 most correlated features with SalePrice are OverallQual (0.79), GrLivArea (0.71), GarageCars (0.64), GarageArea (0.62) and TotalBsmtSF (0.61). We also perform an ANOVA on two independent varibles to see if they have statistically significance on the final Sale Price (is actually good idea to run this after you have the model results). This was to show some of the tools we can we in EDA prior to transforming our dataset.
